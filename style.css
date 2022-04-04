@@ -153,6 +153,7 @@ header .container{
     margin-bottom: 20px;
 }
 .back-start{
+    display: flex;
     text-transform: uppercase;
     font-size: 0.7rem;
     margin-top: 5px;
