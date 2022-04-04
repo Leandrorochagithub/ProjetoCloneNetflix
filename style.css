@@ -1,0 +1,188 @@
+:root{ /*variável fixa para tora a página, são cores padrão do site e mudando aqui, muda tudo*/
+    --vermelho: red;
+    --preto: black;
+}
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*elementos base*/
+body{
+    background-color: var(--preto); /*declaração da variável root*/
+    font-family:Arial, Helvetica, sans-serif ;
+    color: white;
+}
+header .logo{
+    color: var(--vermelho);
+    font-size: 40px;
+    font-family: arial black;
+    margin-left: 5px;
+    margin-top: 0.5%
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    font-size: 1rem;
+    margin-right: 20px;
+    margin-top: 0.5%;
+}
+header nav a:hover{
+    color: #fff;
+}
+header .container{
+    display: flex;
+    align-items: center; /* alinha na vertical*/
+    justify-content: space-between; /* alinha na horizontal*/
+    margin-left: 20px;
+}
+/*elementos da capa*/
+.capa{
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)100%),  url("images/foto-princ11.jpg");
+    margin-top: 0.5%;
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.capa .descrição{
+    font-family:monospace;
+    text-align: justify;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+.título{
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 15%;
+    margin-left: 20px;
+}
+.botão{
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 15px 30px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: none;
+    transition: .4s ease all;
+    border-radius: 5px;
+}
+.botão:hover{
+    background-color: white;
+    color: var(--preto);
+}
+.botão i{
+    margin-right: 8px;
+}
+.capa .container{
+    max-width: 60%;
+}
+.título-trilogia{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: bisque;
+}
+.título-filmes{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: bisque;
+    
+}
+.título-documentários{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: bisque;
+    
+}
+.título-séries{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: bisque;
+    
+}
+.carrosel-films{
+    margin-left: 5px;
+    margin-right: 5px;
+}.box-film{
+    border-radius: 10px;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.box-film:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #fff;
+}
+.foto-série{
+    display: flex;
+    justify-content: center;
+}
+.foto-série:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #fff;
+}
+.box-film-série{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.back-start{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    transition: .4s ease all;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.back-start a:hover{
+    color: var(--preto);
+    background-color: wheat;
+}
+.back-start a{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    transition: .4s ease all;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
