@@ -1,4 +1,4 @@
-:root{ /*variável fixa para tora a página, são cores padrão do site e mudando aqui, muda tudo*/
+:root{ /*variável fixa para toda a página. São cores padrão do site e mudando aqui, muda tudo*/
     --vermelho: red;
     --preto: black;
 }
@@ -186,4 +186,3 @@ header .container{
     border-radius: 5px;
     text-decoration: none;
 }
-
