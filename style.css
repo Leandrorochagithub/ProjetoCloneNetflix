@@ -1,6 +1,6 @@
 :root{ /*variável fixa para toda a página. São cores padrão do site e mudando aqui, muda tudo*/
-    --vermelho: red;
-    --preto: black;
+    --vermelho: #E50914;
+    --preto: #141414;
 }
 *{
     margin: 0;
@@ -19,16 +19,13 @@ body{
 header .logo{
     color: var(--vermelho);
     font-size: 40px;
-    font-family: arial black;
+    font-family: arial var(--preto);
     margin-left: 5px;
-    margin-top: 0.5%
 }
 header nav a{
-    text-decoration: none;
-    color: #AAA;
-    font-size: 1rem;
-    margin-right: 20px;
-    margin-top: 0.5%;
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
 }
 header nav a:hover{
     color: #fff;
@@ -43,41 +40,39 @@ header .container{
 .capa{
     font-size: 16px;
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)100%),  url("images/foto-princ11.jpg");
-    margin-top: 0.5%;
-    height: 500px;
+    
+    height: 400px;
     background-size: cover;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 .capa .descrição{
-    font-family:monospace;
     text-align: justify;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 40px;
     margin-left: 20px;
 }
 .título{
-    text-transform: uppercase;
-    padding-bottom: 30px;
-    font-size: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 15%;
     margin-left: 20px;
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 .botão{
     text-transform: uppercase;
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
-    padding: 15px 30px;
+    border: none;
+
+    padding: 7px 10px;
     margin-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
     margin-left: 20px;
     cursor: pointer;
-    border: none;
     transition: .4s ease all;
     border-radius: 5px;
 }
@@ -89,41 +84,42 @@ header .container{
     margin-right: 8px;
 }
 .capa .container{
-    max-width: 60%;
+    width: 90%;
 }
 .título-trilogia{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 30px;
     font-size: 40px;
-    color: bisque;
+    color: white;
 }
+
 .título-filmes{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 30px;
     font-size: 40px;
-    color: bisque;
+    color: white;
     
 }
 .título-documentários{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 30px;
     font-size: 40px;
-    color: bisque;
+    color: white;
     
 }
 .título-séries{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 30px;
     font-size: 40px;
-    color: bisque;
+    color: white;
     
 }
 .carrosel-films{
@@ -135,18 +131,20 @@ header .container{
     height: 100%;
     width: 100%;
     display: block;
+    margin-bottom: 20px;
 }
 .box-film:hover{
     cursor: pointer;
-    box-shadow: 5px 5px 5px #fff;
+    box-shadow: 3px 3px 0px var(--vermelho);
 }
 .foto-série{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .foto-série:hover{
     cursor: pointer;
-    box-shadow: 5px 5px 5px #fff;
+    box-shadow: 2px 2px 0px var(--vermelho);
 }
 .box-film-série{
     border-radius: 10px;
@@ -170,7 +168,7 @@ header .container{
 }
 .back-start a:hover{
     color: var(--preto);
-    background-color: wheat;
+    background-color: var(--vermelho);
 }
 .back-start a{
     text-transform: uppercase;
